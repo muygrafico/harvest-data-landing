@@ -3,7 +3,7 @@ body {
 }
 .hero{
   background: url('../../images/bg-hero.jpg');
-  padding: 50px 0;
+  padding: 20px 0 50px 0;
 }
 .hero p {
   font-size: 18px;
@@ -35,13 +35,13 @@ p.description{
 }
 
 footer{
-  background: #333;
-  color: #7A7A7A;
+  background: #11434b;
+  color: #BDBDBD;
   padding: 25px;
   font-weight: 300;
 }
 footer a{
-  color: #7A7A7A;
+  color: #BDBDBD;
 }
 
 .logo-footer{
@@ -51,4 +51,19 @@ footer a{
 
 .container-fluid{
   overflow: hidden;
+}
+
+.micro-menu{
+  color: white;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.micro-menu a{
+  padding: 15px;
+  color: white;
+  font-weight: 300;
+}
+.micro-menu a.first{
+  border-right: 1px solid rgba(255,255,255,0.3);
 }
