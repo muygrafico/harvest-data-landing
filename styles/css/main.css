@@ -94,7 +94,15 @@ footer a{
     /* margin-top: -15px; */
   }
 }
-.form-title{}
+.btn-form{
+  border: 1px solid #76d1ab;
+  background: #76d1ab; /* Old browsers */
+  background: -moz-linear-gradient(top, #76d1ab 0%, #02af8c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #76d1ab 0%,#02af8c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #76d1ab 0%,#02af8c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76d1ab', endColorstr='#02af8c',GradientType=0 ); /* IE6-9 */
+
+}
 
 
 .form-request label{
