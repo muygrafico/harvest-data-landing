@@ -68,7 +68,7 @@ footer a{
 .micro-menu a{
   margin: 0 10px;
   border-radius: 4px;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.7);
   padding: 10px 20px !important;
   color: white;
   font-weight: 300;
@@ -88,6 +88,14 @@ footer a{
   color: white;
   font-weight: 300;
 }
+@media screen and (max-width: 480px) {
+  .form-title{
+    font-size: 18px !important;
+    /* margin-top: -15px; */
+  }
+}
+.form-title{}
+
 
 .form-request label{
   font-weight: 300;
