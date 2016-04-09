@@ -9,7 +9,7 @@ body {
 }
 .hero{
   background: url('../../images/bg-hero.jpg');
-  padding: 20px 0 50px 0;
+  padding: 20px 0 25px 0;
 }
 .hero p {
   font-size: 18px;
@@ -17,6 +17,10 @@ body {
 .logo{
   width: 220px;
   padding: 20px;
+}
+p.light{
+  font-weight: 300;
+  padding: 0 30px;
 }
 .mobile-download{
   max-width: 340px;
