@@ -1,0 +1,54 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.hero{
+  background: url('../../images/bg-hero.jpg');
+  padding: 50px 0;
+}
+.hero p {
+  font-size: 18px;
+}
+.logo{
+  width: 220px;
+  padding: 20px;
+}
+.mobile-download{
+  width: 380px;
+  padding: 20px;
+}
+section{
+  padding: 55px 0;
+}
+h2{
+  padding: 0 0 50px 0;
+}
+
+.fa{
+  font-size: 120px;
+  padding-bottom: 20px;
+  color: #535353;
+}
+p.description{
+  font-weight: 300;
+  font-size: 17px;
+  padding: 10px 20px;
+}
+
+footer{
+  background: #333;
+  color: #7A7A7A;
+  padding: 25px;
+  font-weight: 300;
+}
+footer a{
+  color: #7A7A7A;
+}
+
+.logo-footer{
+  width: 100px;
+  padding: 20px;
+}
+
+.container-fluid{
+  overflow: hidden;
+}
