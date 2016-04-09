@@ -20,7 +20,7 @@ section{
   padding: 55px 0;
 }
 h2{
-  padding: 0 0 50px 0;
+  padding: 0 0 65px 0;
 }
 
 .fa{
@@ -56,14 +56,33 @@ footer a{
 .micro-menu{
   color: white;
   /* border: 1px solid red; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .micro-menu a{
-  padding: 15px;
+  margin: 0 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 10px 20px !important;
   color: white;
   font-weight: 300;
+  /* text-decoration: underline; */
+}
+.micro-menu a:hover{
+  /* opacity: 0.5; */
+  background: white;
+  color: #20D4B1;
 }
 .micro-menu a.first{
   border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.form-request{
+  background: #2A2A2A;
+  color: white;
+  font-weight: 300;
+}
+
+.form-request label{
+  font-weight: 300;
 }

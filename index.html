@@ -13,7 +13,7 @@
 <body>
 
 		<div class="container-fluid hero">
-		<div class="pull-right"><ul class="list-inline micro-menu"><li><a class="first" href="">Registrarme</a></li><li><a href="">entrar</a></li></ul></div>
+		<div class="pull-right"><ul class="list-inline micro-menu"><!-- <li><a class="first" href="">Registrarme</a></li> --><li><a href="http://app.harvestdata.co">Entrar</a></li></ul></div>
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<img class="logo" src="images/logo.png" alt="">
@@ -23,7 +23,25 @@
 				</div>
 			</div>
 		</div>
-
+	<section class="form-request">
+	<div class="row">
+	<div class="container">
+		<div class="col-lg-12">
+			<h3 class="text-center form-title">¿Te gustaria usar Harvest Data?</h3>
+		</div>
+	</div>
+	</div>
+		<div class="row">
+			<div class="container">
+				<form id="email-form" class="col-lg-12">
+				  <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+				  <input name ="email" class="form-control input-lg" title="Por favor ingresa tu correo electrónico." placeholder="Ingresa tu correo" type="email" required="required">
+				    <span class="input-group-btn"><button class="btn btn-form btn-lg btn-primary" type="submit">OK</button></span>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</section>
 	<section class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -70,3 +88,35 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<script>
+
+
+
+$(function() {
+  $('#email-form').on('submit',function(e){
+  	e.preventDefault();
+
+  	$.ajax({
+  	    url: "https://formspree.io/info@kaizendevs.com",
+  	    method: "POST",
+  	    data:  $('.email-form').serialize(),
+  	    dataType: "json",
+  	    success: function(data) {
+  	    			$('.email-form').slideUp('slow',function(){
+  	    					$('.form-title').text('¡Gracias por confiar en nosotros!');
+  	    			});
+  	    },
+  	      error: function(err) {
+  	      		$('.email-form').slideUp('slow',function(){
+  	      				$('.form-title').text(':/ Parece que hubo un error, intenta por favor más tarde.');
+  	      		});
+  	      }
+  	});
+
+  	$('#email-form').slideUp('slow',function(){
+  			$('.form-title').text('¡Gracias por confiar en nosotros!');
+  	});
+  })
+});
+</script>
