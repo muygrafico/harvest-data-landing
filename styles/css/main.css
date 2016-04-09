@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.absolute{
+  position: absolute;
+  right:0;
+  /* background: red; */
+  z-index: 1000;
+}
 .hero{
   background: url('../../images/bg-hero.jpg');
   padding: 20px 0 50px 0;
