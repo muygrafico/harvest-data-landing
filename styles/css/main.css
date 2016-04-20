@@ -116,3 +116,7 @@ footer a{
 .section-title {
   margin-bottom: 50px;
 }
+
+.white-color {
+  color: white !important;
+}
